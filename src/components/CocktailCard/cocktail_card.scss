@@ -1,0 +1,23 @@
+.product {
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	border: 1px solid white;
+	margin: 10px;
+	border-radius: 20px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	box-shadow: 1px 1px 5px 0px white;
+	&:hover {
+		transform: scale(1.1);
+	}
+
+	&__img {
+		width: 80%;
+		margin: 20px;
+		border-radius: 20px;
+	}
+}

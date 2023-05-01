@@ -15,6 +15,7 @@ const cocktailSlice = createSlice({
     cocktails: [],
     loading: false,
   },
+  //initialState,
   reducers: {},
   extraReducers: (builder) => {
     builder
@@ -24,10 +25,9 @@ const cocktailSlice = createSlice({
       .addCase(fetchCocktails.fulfilled, (state, action) => {
         state.loading = false;
         state.cocktails = action.payload.drinks;
-        console.log(action.payload.drinks[0]);
       });
   },
 });
 
-export default cocktailSlice.reducer;
 export const selectCocktail = (state) => state.cocktail;
+export default cocktailSlice.reducer;

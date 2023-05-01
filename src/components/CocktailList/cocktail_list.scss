@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+
+.cocktails-main-div {
+  margin-top: 20px;
+}
+
+.cocktails {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  font-family: $font;
+  color: $fontColor;
+}

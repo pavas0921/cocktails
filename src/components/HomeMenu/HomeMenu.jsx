@@ -5,15 +5,15 @@ import "./home_menu.scss";
 const HomeMenu = () => {
   const navigate = useNavigate();
 
-  const goToHome = () => {
-    navigate("/");
+  const goToCocktails = () => {
+    navigate("/cocktails");
   };
 
   return (
     <div className="main">
       <div className="main__nav">
-        <button onClick={goToHome} className="main____buttons">
-          Home
+        <button onClick={goToCocktails} className="main____buttons">
+          Cocktails
         </button>
       </div>
     </div>
