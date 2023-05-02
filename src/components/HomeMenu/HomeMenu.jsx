@@ -13,7 +13,7 @@ const HomeMenu = () => {
     <div className="main">
       <div className="main__nav">
         <button onClick={goToCocktails} className="main____buttons">
-          Cocktails
+          See all Cocktails
         </button>
       </div>
     </div>

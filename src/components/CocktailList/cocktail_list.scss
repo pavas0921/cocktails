@@ -1,7 +1,11 @@
 @import "../../styles/variables.scss";
 
 .cocktails-main-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
+  flex-direction: column;
 }
 
 .cocktails {
@@ -14,4 +18,11 @@
   margin-top: 20px;
   font-family: $font;
   color: $fontColor;
+}
+
+.div-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

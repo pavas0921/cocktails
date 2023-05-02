@@ -18,7 +18,10 @@ const CocktailList = () => {
 
   return (
     <div className="cocktails-main-div">
-      <h1>Cocktail List</h1>
+      <div className="div-title">
+        <h1>Cocktail List</h1>
+      </div>
+
       <div className="cocktails">
         {loading && <Loader />}
         {drinks.length >= 1 &&

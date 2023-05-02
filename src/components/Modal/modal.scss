@@ -1,4 +1,12 @@
 /* Estilos para el modal */
+@import "../../styles/variables.scss";
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
 .modal {
   position: fixed; /* Fijar la posición */
   top: 0;
@@ -12,12 +20,56 @@
 }
 
 .modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: #414141;
   padding: 20px;
   border-radius: 10px;
   position: relative;
   max-width: 500px;
   width: 100%;
+}
+
+.modal-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.div-modal-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.div-modal-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div-modal-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.div-modal-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  font-family: $font;
 }
 
 .close {
@@ -27,6 +79,7 @@
   font-size: 24px;
   font-weight: bold;
   cursor: pointer;
+  font-family: $font;
 }
 
 .modal-img {
@@ -38,10 +91,12 @@
 
 .modal-btn {
   width: 20%;
-  height: 30px;
+  height: 40px;
   background-color: transparent;
   border: 2px solid;
   color: white;
   border-radius: 20px;
-  margin-top: 20px;
+  font-family: $font;
+  font-size: 18px;
+  text-align: center;
 }
